@@ -123,6 +123,45 @@ var crudApp = new (function () {
     div.innerHTML = "수강관리 APP";
     div.appendChild(table);
   };
+
+  // 삭제 함수
+  this.Delete = (oButton) => {
+    var targetIdx = oButton.parentNode.parentNode.rowIndex;
+    this.myClass.splice(targetIdx - 1, 1);
+    this.createTable();
+  };
+
+  // 생성
+  this.CreateNew = (oButton) => {
+    var writtenIdx = oButton.parentNode.parentNode.rowIndex;
+    var trData = document.getElementById("classTable").rows[writtenIdx];
+    var obj = {};
+
+    // tr 데이터에서 입력한 데이터들을 가져오기
+    for (var i = 1; i < this.col.length; i++) {
+      var td = trData.getElementsByTagName("td")[i];
+      //console.log(td);
+
+      if (
+        td.childNodes[0].getAttribute("type") === "text" ||
+        td.childNodes[0].tagName === "SELECT"
+      ) {
+        var txtVal = td.childNodes[0].value;
+        //console.log(txtVal);
+        if (txtVal != "") {
+          obj[this.col[i]] = txtVal;
+        } else {
+          obj = "";
+          alert("모든 항목을 입력해 주세요");
+          break;
+        }
+      }
+    }
+    // 자동으로 새 ID 값이 부여되어 obj의 0번째 인덱스에 담긴다.
+    obj[this.col[0]] = this.myClass.length + 1;
+    this.myClass.push(obj);
+    this.createTable();
+  };
 })();
 
 /*
