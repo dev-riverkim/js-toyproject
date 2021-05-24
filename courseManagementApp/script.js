@@ -191,6 +191,30 @@ var crudApp = new (function () {
         td.appendChild(input);
       }
     }
+
+    var btSave = document.getElementById("Save" + (writtenIdx - 1));
+    btSave.setAttribute("style", "display:block;background-color:#2DBF64");
+    oButton.setAttribute("style", "display:none");
+  };
+
+  // Save - 변경된 값 저장하기
+
+  this.Save = (oButton) => {
+    var writtenIdx = oButton.parentNode.parentNode.rowIndex;
+    var trData = document.getElementById("classTable").rows[writtenIdx];
+
+    // 새롭게 입력된 값으로 myClass 배열 갱신
+
+    for (var i = 1; i < this.col.length; i++) {
+      var td = trData.getElementsByTagName("td")[i];
+      if (
+        td.childNodes[0].getAttribute("type") === "text" ||
+        td.childNodes[0].tagName === "SELECT"
+      ) {
+        this.myClass[writtenIdx - 1][this.col[i]] = td.childNodes[0].value;
+      }
+    }
+    this.createTable();
   };
 })();
 
