@@ -1,6 +1,6 @@
 # js-toyproject
 
-## 프레임워크 없이 CRUD 구현하기
+## 프레임워크 없이 CRUD 구현하기(courseManagementApp)
 
 ## 웹게임 제작 : 공 피하기
 

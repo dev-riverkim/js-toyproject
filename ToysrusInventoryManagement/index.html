@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>재고관리 시스템</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="md:px-32 py-8 w-full">
+      <h1 class="text-5xl font-mono my-4">토이저러스(toysrus) 재고관리 시스템</h1>
+      <div class="shadow overflow-hidden rounded border-b border-gray-200">
+        <table class="min-w-full bg-white">
+          <thead class="bg-gray-800 text-white">
+            <tr>
+              <th class="text-left py-3 px-4 uppercase font-semibold text-sm">상품번호</th>
+              <th class="text-left py-3 px-4 uppercase font-semibold text-sm">브랜드</th>
+              <th class="text-left py-3 px-4 uppercase font-semibold text-sm">품명 및 모델명</th>
+              <th class="text-left py-3 px-4 uppercase font-semibold text-sm">가격</th>
+              <th class="text-left py-3 px-4 uppercase font-semibold text-sm">전화번호</th>
+              <th class="text-left py-3 px-4 uppercase font-semibold text-sm">이메일</th>
+              <th class="text-left py-3 px-4 uppercase font-semibold text-sm">수정</th>
+              <th class="text-left py-3 px-4 uppercase font-semibold text-sm">삭제</th>
+            </tr>
+          </thead>
+          <tbody class="text-gray-700">
+            <tr>
+              <td class="text-left py-3 px-4">1</td>
+              <td class="text-left py-3 px-4">Lian</td>
+              <td class="text-left py-3 px-4">Smith</td>
+              <td class="text-left py-3 px-4">
+                <a class="hover:text-blue-500" href="tel:622322662">622322662</a>
+              </td>
+              <td class="text-left py-3 px-4">
+                <a class="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a>
+              </td>
+              <td class="text-left py-3 px-4">
+                <a class="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a>
+              </td>
+              <td class="text-left py-3 px-4">
+                <button type="button" class="border border-indigo-500 bg-indigo-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-indigo-600 focus:outline-none focus:shadow-outline"> 수정 </button>
+              </td>
+              <td class="text-left py-3 px-4">
+                <button type="button" class="border border-red-500 bg-red-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-red-600 focus:outline-none focus:shadow-outline"> 삭제 </button>
+              </td>
+            </tr>
+            <tr class="bg-gray-100">
+              <td class="text-left py-3 px-4">2</td>
+              <td class="text-left py-3 px-4">Emma</td>
+              <td class="text-left py-3 px-4">Johnson</td>
+              <td class="text-left py-3 px-4">
+                <a class="hover:text-blue-500" href="tel:622322662">622322662</a>
+              </td>
+              <td class="text-left py-3 px-4">
+                <a class="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a>
+              </td>
+              <td class="text-left py-3 px-4">
+                <a class="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a>
+              </td>
+              <td class="text-left py-3 px-4">
+                <button type="button" class="border border-indigo-500 bg-indigo-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-indigo-600 focus:outline-none focus:shadow-outline"> 수정 </button>
+              </td>
+              <td class="text-left py-3 px-4">
+                <button type="button" class="border border-red-500 bg-red-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-red-600 focus:outline-none focus:shadow-outline"> 삭제 </button>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-left py-3 px-4">3</td>
+              <td class="text-left py-3 px-4">Oliver</td>
+              <td class="text-left py-3 px-4">Williams</td>
+              <td class="text-left py-3 px-4">
+                <a class="hover:text-blue-500" href="tel:622322662">622322662</a>
+              </td>
+              <td class="text-left py-3 px-4">
+                <a class="hover:text-blue-500" href="tel:622322662">622322662</a>
+              </td>
+              <td class="text-left py-3 px-4">
+                <a class="hover:text-blue-500" href="tel:622322662">622322662</a>
+              </td>
+              <td class="text-left py-a3 px-4">
+                <button type="button" class="border border-indigo-500 bg-indigo-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-indigo-600 focus:outline-none focus:shadow-outline"> 수정 </button>
+              </td>
+              <td class="text-left py-3 px-4">
+                <button type="button" class="border border-red-500 bg-red-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-red-600 focus:outline-none focus:shadow-outline"> 삭제 </button>
+              </td>
+            </tr>
+            <tr class="bg-gray-100">
+              <td class="text-left py-3 px-4">4</td>
+              <td class="text-left py-3 px-4">Isabella</td>
+              <td class="text-left py-3 px-4">Brown</td>
+              <td class="text-left py-3 px-4">
+                <a class="hover:text-blue-500" href="tel:622322662">622322662</a>
+              </td>
+              <td class="text-left py-3 px-4">
+                <a class="hover:text-blue-500" href="tel:622322662">622322662</a>
+              </td>
+              <td class="text-left py-3 px-4">
+                <a class="hover:text-blue-500" href="tel:622322662">622322662</a>
+              </td>
+              <td class="text-left py-3 px-4">
+                <button type="button" class="border border-indigo-500 bg-indigo-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-indigo-600 focus:outline-none focus:shadow-outline"> 수정 </button>
+              </td>
+              <td class="text-left py-3 px-4">
+                <button type="button" class="border border-red-500 bg-red-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-red-600 focus:outline-none focus:shadow-outline"> 삭제 </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
