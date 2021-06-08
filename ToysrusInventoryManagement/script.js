@@ -159,7 +159,7 @@ const toysrusApp = new (function () {
           inputElem.appendChild(selectElem);
         } else {
           const textBoxElem = document.createElement("input");
-          textBoxElem.setAttribute("class", "shadow appearance-none border rounded py-2 px-3 text-grey-darker");
+          textBoxElem.setAttribute("class", "h-full w-full shadow appearance-none border rounded py-2 px-3 text-grey-darker");
           textBoxElem.setAttribute("type", "text");
           textBoxElem.setAttribute("value", "");
           inputElem.appendChild(textBoxElem);
